@@ -29,7 +29,7 @@ function draw() {
   if (x < ballsize || x > canvas.width - ballsize || y < ballsize || y > canvas.height - ballsize) {
     ballColor = getRandomColor(); // Change color when hitting the border
     counter += 1; // Increment the counter
-    ballsize += 1; // Increase the ball size
+    ballsize += 0.2; // Increase the ball size
   }
 
   ctx.fillStyle = ballColor; // Set the color
