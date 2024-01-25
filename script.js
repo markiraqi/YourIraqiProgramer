@@ -29,7 +29,6 @@ function draw() {
   if (x < ballsize || x > canvas.width - ballsize || y < ballsize || y > canvas.height - ballsize) {
     ballColor = getRandomColor(); // Change color when hitting the border
     counter += 1; // Increment the counter
-    ballsize += 0.2; // Increase the ball size
   }
 
   ctx.fillStyle = ballColor; // Set the color
@@ -39,7 +38,7 @@ function draw() {
 
   // Display the counter in the middle of the canvas
   ctx.fillStyle = "#000"; // Set color for the number
-  ctx.font = "80px Arial"; // Set font size and family
+  ctx.font = "80px Arial"; // Set font size
   ctx.textAlign = "center"; // Center the text horizontally
   ctx.textBaseline = "middle"; // Center the text vertically
   ctx.fillText(counter, canvas.width / 2, canvas.height / 2);
